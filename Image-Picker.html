@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 -MHD.PUTRA HIDAYAH NASUTION</title>
+</head>
+<body style="background-color: burlywood;">
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="photo1">Panda</option>
+            <option value="photo2">Harimau</option>
+            <option value="photo3">Kucing</option>
+            <option value="photo4">Kelinci</option>
+            <option value="photo5">Kupu-kupu</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "photo1"){
+           image.src = "Panda.jpg"
+            alert ("ini panda!")
+        }else if(img == "photo2"){
+            image.src = "Harimau.jpg"
+            alert ("ini harimau!")
+        }else if(img == "photo3"){
+            image.src = "Kucing.jpg"
+            alert ("ini kucing")
+        }else if(img == "photo4"){
+            image.src = "Kelinci.jpg"
+            alert ("ini kelinci!")
+        }else if(img == "photo5") {
+            image.src = "Kupu-kupu.jpg"
+            alert("ini kupu-kupu!")
+        }    
+    }
+</script>
+
+</body>
+</html>
